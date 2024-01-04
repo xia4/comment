@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="userForm">
+            <label for="nicknameInput" class="login_label">UserName</label>
+            <input type="text" id="nicknameInput" class="login_input" autocomplete="off">
+            <label for="imageInput" class="login_label custom-file-upload">Image</label>
+            <input type="file" id="imageInput" accept="image/*" class="login_input" onchange="displayFileName()">
+            <p id="selectedFileName" class="file-name"></p>
+            <button type="button" class="login_submit" onclick="saveUserInfo()">Save</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
